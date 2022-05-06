@@ -7,10 +7,7 @@ import cardVideo from './card--video.html';
 import cardButton from './card--button.html';
 import cardPromo from './card--promo.html';
 import cardPromoBrand from './card--promo-brand.html';
-
-
-
-
+import cardColored from './card--colored.html';
 
 import cardCSS from './card.css';
 
@@ -89,5 +86,8 @@ export default {
     },
     cardPromo: function () {
         return cardPromo
+    },
+    cardColored: function () {
+        return cardColored
     }
 }

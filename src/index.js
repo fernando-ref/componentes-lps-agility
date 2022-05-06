@@ -1,10 +1,12 @@
+import minimalHeader from './components/header/minimal/minimal';
+
 import container from './components/container/container';
 
 import heroBanner from './components/banner/hero/hero-banner';
 import videoBanner from './components/banner/video/video-banner';
 import carrousel from './components/banner/carrousel/carrousel';
 import bandBanner from './components/banner/band/band-banner';
-
+import stickerBanner from './components/banner/sticker/sticker-banner';
 
 import textBox from './components//text/text-box/text-box';
 import title from './components/text/title/title';
@@ -45,6 +47,20 @@ document.addEventListener('DOMContentLoaded', function () {
   
 
 document.getElementById("root").innerHTML = `
+
+<div class="container"><div>
+
+<h2 class="component-group">Header</h2>
+<h3 class="component">Minimal</h3>
+</div></div>
+${minimalHeader.minimal()}
+<script type="text/plain" class="language-markup">
+<div class="header-minimal">
+    <img src="https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/canvas/logo.svg"
+        alt="Scotiabank logo">
+</div>
+</script>
+
 
 <div class="container"><div>
 <h2 class="component-group">Container</h2>
@@ -188,6 +204,28 @@ ${bandBanner.bandBanner()}
             </div>
         </div>
     </div>
+</div>
+</script>
+
+
+<div class="container"><div>
+<h3 class="component">Sticker banner</h3>
+</div></div>
+<div class="container"><div>
+${stickerBanner.stickerBanner()}
+</div></div>
+<script type="text/plain" class="language-markup">
+<!-- redColor, blue, purple, pink, yellow, orange, green, yellow, grey -->
+<div class="sticker-banner blue">
+    <a href="#">
+        <div>
+            <img src="--Here your URL image background--" alt="">
+        </div>
+        <div>
+            <!-- Title here -->
+            <div class="sticker-banner--ftr whiteColor"></div>
+        </div>
+    </a>
 </div>
 </script>
 
@@ -701,6 +739,55 @@ ${cards.cardProductBrand()}
             </div>
         </a>
     </article>
+</div>
+</script>
+
+
+<h3 class="component">Colored Card</h3>
+<div class="cardWrapper">
+${cards.cardColored()}
+</div>
+<script type="text/plain" class="language-markup">
+<div class="cardWrapper">
+
+<article class="card card--colored grey">
+    <a href="#">
+        <div style="background-image:url('--URL image logo 1 background here--'')"></div>
+        <div>
+            <h3>!-- Title 1 here --></h3>
+            <div class="card--colored--ftr whiteColor"></div>
+        </div>
+    </a>
+</article>
+<article class="card card--colored red">
+    <a href="#">
+        <div style="background-image:url('--URL image logo 1 background here--'')"></div>
+        <div>
+            <h3>!-- Title 2 here --></h3>
+            <div class="card--colored--ftr whiteColor"></div>
+        </div>
+    </a>
+</article>
+<article class="card card--colored purple">
+    <a href="#">
+        <div style="background-image:url('--URL image logo 1 background here--'')"></div>
+        <div>
+            <h3>!-- Title 3 here --></h3>
+            <div class="card--colored--ftr whiteColor"></div>
+        </div>
+    </a>
+</article>
+<article class="card card--colored green">
+    <a href="#">
+        <div style="background-image:url('--URL image logo 1 background here--'')"></div>
+        <div>
+            <h3>!-- Title 4 here --></h3>
+            <div class="card--colored--ftr whiteColor"></div>
+        </div>
+    </a>
+</article>
+
+
 </div>
 </script>
 

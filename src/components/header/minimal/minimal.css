@@ -1,0 +1,11 @@
+.header-minimal {
+    box-sizing: border-box;
+    padding: 32px 0;
+    border-top:3px solid #ec111a;
+}
+
+.header-minimal>img {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+}

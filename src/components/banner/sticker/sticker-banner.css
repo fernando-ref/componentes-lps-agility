@@ -1,0 +1,94 @@
+.sticker-banner {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    transition: ease .25s;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 11%);
+    line-height: 1.5;
+    font-size: 20px;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.sticker-banner>a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    line-height: 0;
+}
+
+.sticker-banner:hover {
+    box-shadow: 0 0 0 0 rgb(0 0 0 / 11%);
+}
+
+.sticker-banner>a>div:nth-child(1) {
+    width: 30%;
+}
+
+.sticker-banner>a>div:nth-child(1)>img {
+    width: 100%;
+    height: auto;
+}
+
+.sticker-banner>a>div:nth-child(2) {
+    color: #FFF;
+    font-weight: 600;
+    width: 70%;
+    box-sizing: border-box;
+    padding: 24px 24px 0 24px;
+    line-height: normal;
+}
+
+.sticker-banner--ftr.whiteColor {
+    background: url('https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/iconfinder_arrow-right_227601_w.svg') no-repeat center center;
+    background-size: contain;
+    height: 28px;
+    width: 28px;
+    transition: ease .25s;
+    bottom: 16px;
+    margin: 0 0 0 auto;
+}
+
+.sticker-banner--ftr.whiteColor:hover {
+    transform: translateX(4px);
+}
+
+.sticker-banner.red {
+    background-color: #EC111A;
+}
+
+.sticker-banner.orange {
+    background-color: #FB6330;
+}
+
+.sticker-banner.green {
+    background-color: #138468;
+}
+
+.sticker-banner.blue {
+    background-color: #009DD6;
+}
+
+.sticker-banner.purple {
+    background-color: #7849B8;
+}
+
+.sticker-banner.pink {
+    background-color: #F2609E;
+}
+
+.sticker-banner.yellow {
+    background-color: #FFD42F;
+}
+
+.sticker-banner.grey {
+    background-color: #333333;
+}
+
+@media only screen and (min-width:720px) {
+    .sticker-banner {
+        width: 65%;
+        margin: 0 auto;
+    }
+}

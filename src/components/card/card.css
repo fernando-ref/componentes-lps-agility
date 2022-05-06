@@ -1,4 +1,4 @@
-.cardWrapper{
+.cardWrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -7,9 +7,9 @@
     margin: 0 auto;
 }
 
-.card{
+.card {
     width: 100%;
-    padding:36px;
+    padding: 36px;
     box-sizing: border-box;
     border: 1px solid transparent;
     border-radius: 8px;
@@ -21,28 +21,30 @@
     background-color: #FFF;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0 0 0 0 rgb(0 0 0 / 11%);
     border: 1px solid #eee;
 }
 
-.cardWrapper > .card{
-    margin:0 0 36px 0;
+.cardWrapper>.card {
+    margin: 0 0 36px 0;
 }
 
-.cardWrapper > .card:nth-last-child(){
-    margin:0;
+.cardWrapper>.card:nth-last-child() {
+    margin: 0;
 }
 
-@media only screen and (min-width:720px){
-    .card{
+@media only screen and (min-width:720px) {
+    .card {
         font-size: 16px;
     }
-    .cardWrapper.sameHeight{
+
+    .cardWrapper.sameHeight {
         align-items: initial;
     }
-    .title{
-        font-size:36px;
+
+    .title {
+        font-size: 36px;
     }
 }
 
@@ -68,7 +70,7 @@
     margin-bottom: 16px;
 }
 
-@media only screen and (min-width:720px){
+@media only screen and (min-width:720px) {
 
     .card--feature {
         width: 45%;
@@ -79,6 +81,7 @@
     .card--feature {
         font-size: 16px;
     }
+
     .card--feature>h3 {
         font-size: 20px;
         display: block;
@@ -96,49 +99,51 @@
     background-color: #FFF;
 }
 
-.card--product> a{
+.card--product>a {
     text-decoration: none;
     color: #000;
 }
 
-.card--product> a > div:nth-child(1) {
+.card--product>a>div:nth-child(1) {
     height: 200px;
     border-radius: 8px 8px 0 0;
     background: url('https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/GettyImages-1125585624.jpg') no-repeat center center;
     background-size: cover;
 }
 
-.card--product > a > div:nth-child(2) {
+.card--product>a>div:nth-child(2) {
     padding: 36px;
     background-color: #FFF;
 }
 
-.card--product > a > div:nth-child(2) h3{
+.card--product>a>div:nth-child(2) h3 {
     font-size: 18px;
     font-weight: 600;
-    margin:0 0 16px 0;
+    margin: 0 0 16px 0;
 }
 
-.card--product--ftr.redColor{
+.card--product--ftr.redColor {
     position: absolute;
     background: url('https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/iconfinder_arrow-right_227601.svg') no-repeat center center;
     background-size: contain;
     height: 28px;
     width: 28px;
     transition: ease .25s;
-    bottom:16px;
+    bottom: 16px;
 }
-.card--product--ftr.redColor:hover{
+
+.card--product--ftr.redColor:hover {
     transform: translateX(4px);
 }
-.card--product--ftr.blue{
+
+.card--product--ftr.blue {
     position: absolute;
     font-weight: 600;
     color: #009dd6;
     box-sizing: border-box;
     padding-right: 18px;
-    border-bottom:1px solid transparent;
-    bottom:16px;
+    border-bottom: 1px solid transparent;
+    bottom: 16px;
 }
 
 .card--product--ftr.blue::after {
@@ -152,8 +157,8 @@
     top: 6px;
 }
 
-.card--product--ftr.blue:hover{
-    border-bottom:1px solid #009dd6;
+.card--product--ftr.blue:hover {
+    border-bottom: 1px solid #009dd6;
 }
 
 /*
@@ -161,12 +166,12 @@
 ************************************************************************************************
 */
 
-.brands{
+.brands {
     position: relative;
     height: 32px;
 }
 
-.brands > div:nth-child(1){
+.brands>div:nth-child(1) {
     left: -18px;
     height: 24px;
     width: 20%;
@@ -176,7 +181,7 @@
     background-position: center center;
 }
 
-.brands > div:nth-child(2){
+.brands>div:nth-child(2) {
     right: -18px;
     height: 24px;
     width: 20%;
@@ -186,13 +191,13 @@
     background-position: center center;
 }
 
-@media only screen and (min-width:720px){
+@media only screen and (min-width:720px) {
 
     .card--product {
         width: 30%;
     }
 
-    .card--product > a > div:nth-child(2) h3{
+    .card--product>a>div:nth-child(2) h3 {
         font-size: 20px;
     }
 }
@@ -224,7 +229,7 @@
     background-size: cover;
 }
 
-@media only screen and (min-width:720px){
+@media only screen and (min-width:720px) {
 
     .card--combo {
         width: 100%;
@@ -239,17 +244,18 @@
         order: 2;
         width: 45%;
         height: 100%;
-        border-radius:0 8px 8px 0;
+        border-radius: 0 8px 8px 0;
     }
-    
+
     .card--combo.inverse>div:nth-child(1) {
         order: 2;
     }
+
     .card--combo.inverse>div:nth-child(2) {
         order: 1;
         text-align: left;
-        border-radius:8px 0 0 8px;
-    
+        border-radius: 8px 0 0 8px;
+
     }
 }
 
@@ -292,10 +298,10 @@
 .card--video>div:nth-child(2)>h3 {
     font-size: 20px;
     font-weight: 600;
-    margin-top:0;
+    margin-top: 0;
 }
 
-.card--video>div:nth-child(1)::before{
+.card--video>div:nth-child(1)::before {
     content: '';
     position: absolute;
     width: 64px;
@@ -314,7 +320,7 @@
     transform: translate(-50%, -50%) scale(1.2);
 }
 
-@media only screen and (min-width:720px){
+@media only screen and (min-width:720px) {
     .card--video {
         width: 30%;
     }
@@ -341,11 +347,11 @@
     display: none;
 }
 
-.description-content{
+.description-content {
     padding: 36px;
 }
 
-@media only screen and (min-width:720px){
+@media only screen and (min-width:720px) {
     .card--button {
         width: 25%;
     }
@@ -357,7 +363,7 @@
 */
 .card--promo {
     width: 100%;
-  }
+}
 
 .card_promo-card_header {
     display: flex;
@@ -418,7 +424,7 @@
 }
 
 .card_promo-card_content.visibleTC>div:nth-child(2) {
-display: block;
+    display: block;
 }
 
 .card_promo-card_content>div>p {
@@ -464,8 +470,133 @@ display: block;
 }
 
 
-  @media only screen and (min-width:720px){
+@media only screen and (min-width:720px) {
     .card--promo {
         width: 40%;
+    }
+}
+
+/*
+* Card - Colored
+************************************************************************************************
+*/
+.card--colored {
+    position: relative;
+    width: 50%;
+    padding: 0;
+    background-color: #FFF;
+}
+
+.card--colored>a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.card--colored>a>div:nth-child(1) {
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+    background: url('https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/GettyImages-1163454458.png') no-repeat center bottom;
+    background-size: contain;
+}
+
+.card--colored>a>div:nth-child(2) {
+    padding: 24px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card--colored>a>div:nth-child(2) h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+    width: 80%;
+}
+
+.card--colored--ftr.whiteColor {
+    background: url('https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/iconfinder_arrow-right_227601_w.svg') no-repeat center center;
+    background-size: contain;
+    height: 28px;
+    width: 28px;
+    transition: ease .25s;
+    bottom: 16px;
+}
+
+.card--colored--ftr.whiteColor:hover {
+    transform: translateX(4px);
+}
+
+.card--colored.red>a>div:nth-child(1) {
+    background-color: #FF969C;
+}
+
+.card--colored.red>a>div:nth-child(2) {
+    background-color: #EC111A;
+}
+
+.card--colored.orange>a>div:nth-child(1) {
+    background-color: #FFBA8E;
+}
+
+.card--colored.orange>a>div:nth-child(2) {
+    background-color: #FB6330;
+}
+
+.card--colored.green>a>div:nth-child(1) {
+    background-color: #84D9C6;
+}
+
+.card--colored.green>a>div:nth-child(2) {
+    background-color: #138468;
+}
+
+.card--colored.blue>a>div:nth-child(1) {
+    background-color: #91DDF8;
+}
+
+.card--colored.blue>a>div:nth-child(2) {
+    background-color: #009DD6;
+}
+
+.card--colored.purple>a>div:nth-child(1) {
+    background-color: #AEA9F4;
+}
+
+.card--colored.purple>a>div:nth-child(2) {
+    background-color: #7849B8;
+}
+
+.card--colored.pink>a>div:nth-child(1) {
+    background-color: #FDA8DE;
+}
+
+.card--colored.pink>a>div:nth-child(2) {
+    background-color: #F2609E;
+}
+
+.card--colored.yellow>a>div:nth-child(1) {
+    background-color: #FFEAA5;
+}
+
+.card--colored.yellow>a>div:nth-child(2) {
+    background-color: #FFD42F;
+}
+
+.card--colored.grey>a>div:nth-child(1) {
+    background-color: #4D4D4D;
+}
+
+.card--colored.grey>a>div:nth-child(2) {
+    background-color: #333333;
+}
+
+@media only screen and (min-width:720px) {
+    .card--colored {
+        width: 21%;
+    }
+
+    .card--colored>a>div:nth-child(1) {
+        height: 240px;
     }
 }
