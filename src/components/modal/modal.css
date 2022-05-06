@@ -1,0 +1,68 @@
+.modal-triger{
+    cursor:pointer;
+}
+.modal-triger:hover{
+    text-decoration: underline;
+}
+.modal-view {
+    overflow: hidden;
+}
+
+.modal-generic {
+    display: none;
+}
+
+.modal-generic-content {
+    height: 100%;
+    left: 0;
+    overflow: scroll;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99;
+    background: rgba(0, 0, 0, 0.7) no-repeat center center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal-generic-content>div {
+    position: absolute;
+    width: 90%;
+    min-height: 160px;
+    margin: 48px auto;
+    border: 1px solid #e2e8ee;
+    border-radius: 4px;
+    background-color: #FFF;
+    box-shadow: 0 2px 10px 0 rgba(0, 40, 80, 0.11);
+    font-size: 16px;
+}
+.modal-generic .modal-generic-close {
+    text-align: right;
+    padding: 16px 16px 0 0;
+    box-sizing: border-box;
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+}
+
+.modal-generic-close>span {
+    cursor: pointer;
+}
+
+.modal-generic-close>span:hover {
+    color: #8230DF;
+    font-weight: 700;
+}
+
+@media only screen and (min-width:720px){
+    .modal-generic-content {
+        justify-content: center;
+    }
+
+    .modal-generic-content>div {
+        width: 55%;
+        max-width: 1140px;
+    }
+}

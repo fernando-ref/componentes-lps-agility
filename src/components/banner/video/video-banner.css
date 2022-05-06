@@ -1,0 +1,70 @@
+.videoBanner {
+    position: relative;
+    margin-top: 70px;
+    background-color: #333;
+}
+
+.videoContainer video {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+
+.videoText {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 20px;
+    color: #FFF;
+}
+.videoText > div{
+    padding: 36px;
+    box-sizing: border-box;
+}
+.videoText > div > h1.title{
+    color:#FFF !important;
+    margin-top:0;
+}
+
+
+@media only screen and (min-width:720px) {
+
+    .videoBanner {
+        margin-top: 65px;
+    }
+    .videoContainer {
+        width: 100%;
+        height: 50vh;
+        background-color: #000;
+    }
+    .videoContainer > video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    .videoText {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 18px;
+        text-align: center;
+        color: #FFF;
+        text-align: center;
+    }
+    .videoText > div {
+        padding: 0 23% 0 23%;
+    }
+    .videoText > div > h1.title {
+        margin-bottom: 0;
+        color: #FFF !important;
+    }
+    .videoText>div>strong {
+        font-weight: 600;
+    }
+}

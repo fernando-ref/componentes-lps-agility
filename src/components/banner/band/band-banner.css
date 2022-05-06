@@ -1,0 +1,88 @@
+.band-banner > div{
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-position: -1000%;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #000;
+    word-break: break-word;
+}
+.band-banner.redColor > div{
+    background-color: #EC111A;
+    color:#FFF;
+}
+.band-banner.orange > div{
+    background-color: #FB6330;
+    color:#FFF;
+}
+.band-banner.green > div{
+    background-color: #138468;
+    color:#FFF;
+}
+.band-banner.blue > div{
+    background-color: #009DD6;
+    color:#FFF;
+}
+.band-banner.purple > div{
+    background-color: #7849B8;
+    color:#FFF;
+}
+.band-banner.pink > div{
+    background-color: #F2609E;
+    color:#FFF;
+}
+.band-banner.yellow > div{
+    background-color: #FFD42F;
+    color:#FFF;
+}
+.band-banner.grey > div{
+    background-color: #333333;
+    color:#FFF;
+}
+
+.band-banner > div > div {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.band-banner> div > div> div {
+    width: 100%;
+}
+
+.band-banner> div >div > div >h4{
+    display: block;
+    margin: 0 0 8px 0;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #FFF;
+}
+
+.band-banner > div >div>div:nth-child(1) {
+    padding: 32px;
+}
+
+@media only screen and (min-width:720px) {
+
+    .band-banner > div:nth-child(1){
+        background-size: 45%;
+        background-position: left;
+    }
+
+    .band-banner> div >div>div:nth-child(1) {
+        width: 50%;
+        padding: 56px 0;
+    }
+
+    .band-banner >div > div > div >h4 {
+        font-size: 32px;
+    }
+
+    .band-banner> div >div > div >h4 > sup{
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Getting Started</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/prism.css">
+  <link rel="stylesheet"
+    href="https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/fonts/Scotia_MX.css" />
+
+  <link rel="stylesheet"
+    href="https://cdn.agilitycms.com/scotia-bank-mexico/digital-factory/hipotecario-credito/plugin/owl/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdn.agilitycms.com/scotia-bank-mexico/digital-factory/hipotecario-credito/plugin/owl/assets/owl.theme.default.min.css">
+
+
+  <link rel="stylesheet" href="main.css">
+
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    pre {
+      font-size: 12px !important;
+    }
+
+    .code-toolbar {
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    h2.component-group {
+      box-sizing: border-box;
+      margin-top: 120px;
+      padding: 0 0 8px 36px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+      position: relative;
+      color: #000;
+    }
+
+    h2.component-group::before {
+      content: '';
+      background: url('https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/iconfinder_folder-blue_285658.svg') no-repeat center center;
+      background-size: contain;
+      height: 28px;
+      width: 28px;
+      position: absolute;
+      left: 0;
+    }
+
+    h3.component {
+      box-sizing: border-box;
+      margin: 80px 0 32px 0;
+      padding: 0 0 8px 32px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+      position: relative;
+      color: #000;
+    }
+
+    h3.component::before {
+      content: '';
+      background: url('https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/iconfinder_component_299065.svg') no-repeat center center;
+      background-size: contain;
+      height: 22px;
+      width: 22px;
+      position: absolute;
+      left: 0;
+    }
+
+
+    h2.component-group+h3.component {
+      margin-top: 48px;
+    }
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <div id="main-body" class="line-numbers">
+    <div id="root"></div>
+  </div>
+
+  <script
+    src="https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/canvas/jquery-3.5.1.min.js"></script>
+  <script
+    src="https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/canvas/owl.carousel.min.js"></script>
+  <script src="boundle.js"></script>
+  <script src="https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/prism.js"></script>
+  <script type="application/javascript">
+
+
+
+
+
+    document.addEventListener('DOMContentLoaded', function (e) {
+
+
+      var configW = {
+        autoplayTimeout: 9000,
+        autoplay: false,
+        loop: false,
+        nav: true,
+        responsive: { 0: { items: 1 }, 500: { items: 3 } }
+      };
+
+      jQuery("#e1").owlCarousel(configW);
+
+
+      $('.card--video > div:nth-child(1)').click(function (e) {
+        var video = '<iframe class="full-video" width="560" height="315" style="margin:0 auto;" src="' + $(this).data('video') + '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        $('.videoC .modal-generic-content > .video-container').html(video);
+
+        $('.videoC').show();
+        $('body').addClass('modal-view');
+
+      });
+
+      $('.videoC').click(function (e) {
+        $('.videoC').hide();
+        $('body').removeClass('modal-view');
+        // Clean injected data
+        $('.videoC .video-container').html('');
+      });
+
+
+    });
+
+
+  </script>
+  <style>
+    #e1 .owl-nav {
+      display: none;
+    }
+
+
+    @media only screen and (min-width: 720px) {
+
+
+
+      #e1 .card--video {
+        width: 90%;
+      }
+
+
+      #e1 .owl-nav {
+        display: block;
+      }
+
+      #e1 .owl-prev {
+        width: 42px;
+        height: auto;
+        position: absolute;
+        top: 20%;
+        left: -30px;
+        display: block !important;
+        border: 0px solid black;
+      }
+
+      #e1 .owl-next {
+        width: 42px;
+        height: auto;
+        position: absolute;
+        top: 20%;
+        right: -30px;
+        display: block !important;
+        border: 0px solid black;
+      }
+
+      #e1 .owl-prev span,
+      #e1 .owl-next span {
+        font-size: 80px;
+        display: inline-block;
+        padding: 0 0 10px 0;
+      }
+    }
+  </style>
+</body>
+
+</html>

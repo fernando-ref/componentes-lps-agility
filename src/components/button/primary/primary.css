@@ -1,0 +1,21 @@
+.primary{
+	background-color: #ec111a;
+    color: #FFF;
+    border: 1px solid transparent;
+    font-weight: 800;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 18px 30px;
+	box-sizing: border-box;
+	text-decoration: none;
+	display: inline-block;
+	-webkit-transition: .33s ease;
+    transition: .33s ease;
+}
+
+.primary:hover{
+	border-color: #a6000e;
+	background-color: #a6000e;
+}

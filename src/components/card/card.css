@@ -1,0 +1,471 @@
+.cardWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card{
+    width: 100%;
+    padding:36px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: ease .25s;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 11%);
+    line-height: 1.5;
+    font-size: 18px;
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+.card:hover{
+    box-shadow: 0 0 0 0 rgb(0 0 0 / 11%);
+    border: 1px solid #eee;
+}
+
+.cardWrapper > .card{
+    margin:0 0 36px 0;
+}
+
+.cardWrapper > .card:nth-last-child(){
+    margin:0;
+}
+
+@media only screen and (min-width:720px){
+    .card{
+        font-size: 16px;
+    }
+    .cardWrapper.sameHeight{
+        align-items: initial;
+    }
+    .title{
+        font-size:36px;
+    }
+}
+
+/*
+* Card - Feature
+************************************************************************************************
+*/
+.card--feature {
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.card--feature>img {
+    width: 48px;
+    display: block;
+    margin-bottom: 24px;
+}
+
+.card--feature>h3 {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 16px;
+}
+
+@media only screen and (min-width:720px){
+
+    .card--feature {
+        width: 45%;
+        padding: 24px;
+        box-sizing: border-box;
+    }
+
+    .card--feature {
+        font-size: 16px;
+    }
+    .card--feature>h3 {
+        font-size: 20px;
+        display: block;
+    }
+}
+
+/*
+* Card - Product
+************************************************************************************************
+*/
+.card--product {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    background-color: #FFF;
+}
+
+.card--product> a{
+    text-decoration: none;
+    color: #000;
+}
+
+.card--product> a > div:nth-child(1) {
+    height: 200px;
+    border-radius: 8px 8px 0 0;
+    background: url('https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/GettyImages-1125585624.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.card--product > a > div:nth-child(2) {
+    padding: 36px;
+    background-color: #FFF;
+}
+
+.card--product > a > div:nth-child(2) h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin:0 0 16px 0;
+}
+
+.card--product--ftr.redColor{
+    position: absolute;
+    background: url('https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/iconfinder_arrow-right_227601.svg') no-repeat center center;
+    background-size: contain;
+    height: 28px;
+    width: 28px;
+    transition: ease .25s;
+    bottom:16px;
+}
+.card--product--ftr.redColor:hover{
+    transform: translateX(4px);
+}
+.card--product--ftr.blue{
+    position: absolute;
+    font-weight: 600;
+    color: #009dd6;
+    box-sizing: border-box;
+    padding-right: 18px;
+    border-bottom:1px solid transparent;
+    bottom:16px;
+}
+
+.card--product--ftr.blue::after {
+    content: '';
+    background: url('https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/iconfinder_chevron-right_326578.svg') no-repeat center center;
+    background-size: contain;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+}
+
+.card--product--ftr.blue:hover{
+    border-bottom:1px solid #009dd6;
+}
+
+/*
+* Card - Product  Brand
+************************************************************************************************
+*/
+
+.brands{
+    position: relative;
+    height: 32px;
+}
+
+.brands > div:nth-child(1){
+    left: -18px;
+    height: 24px;
+    width: 20%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.brands > div:nth-child(2){
+    right: -18px;
+    height: 24px;
+    width: 20%;
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+@media only screen and (min-width:720px){
+
+    .card--product {
+        width: 30%;
+    }
+
+    .card--product > a > div:nth-child(2) h3{
+        font-size: 20px;
+    }
+}
+
+/*
+* Card - Combo
+************************************************************************************************
+*/
+.card--combo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+}
+
+.card--combo>div:nth-child(1) {
+    order: 2;
+    box-sizing: border-box;
+    padding: 36px;
+    text-align: justify;
+}
+
+.card--combo>div:nth-child(2) {
+    order: 1;
+    width: 100%;
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+}
+
+@media only screen and (min-width:720px){
+
+    .card--combo {
+        width: 100%;
+    }
+
+    .card--combo>div:nth-child(1) {
+        order: 1;
+        width: 55%;
+    }
+
+    .card--combo>div:nth-child(2) {
+        order: 2;
+        width: 45%;
+        height: 100%;
+        border-radius:0 8px 8px 0;
+    }
+    
+    .card--combo.inverse>div:nth-child(1) {
+        order: 2;
+    }
+    .card--combo.inverse>div:nth-child(2) {
+        order: 1;
+        text-align: left;
+        border-radius:8px 0 0 8px;
+    
+    }
+}
+
+/*
+* Card - Video
+************************************************************************************************
+*/
+.card--video {
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.card--video .title {
+    font-size: 20px;
+    font-weight: bold;
+    display: block;
+}
+
+.card--video>div:nth-child(1) {
+    position: relative;
+    background: no-repeat left center;
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.card--video>div:nth-child(1):hover {
+    cursor: pointer;
+}
+
+.card--video>div:nth-child(2) {
+    padding: 36px;
+}
+
+.card--video>div:nth-child(2)>h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top:0;
+}
+
+.card--video>div:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 50%;
+    left: 50%;
+    background: url('https://scotiabankfiles.azureedge.net/scotia-bank-mexico/play_btn.svg') no-repeat center center;
+    background-size: contain;
+    transition: all 0.4s;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+}
+
+.card--video>div:nth-child(1):hover::before {
+    transform-origin: center;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+@media only screen and (min-width:720px){
+    .card--video {
+        width: 30%;
+    }
+}
+
+/*
+* Card - Button
+************************************************************************************************
+*/
+.card--button {
+    background: url(https://scotiabankfiles.azureedge.net/scotia-bank-mexico/digital-factory/origination/assets/img/icons/button_arrow_right.svg) no-repeat 90% center;
+    width: 100%;
+    padding: 24px;
+    font-weight: 600;
+    transition: background-position 0.3s;
+    text-decoration: none !important;
+}
+
+.card--button:hover {
+    background-position: 92% center;
+}
+
+.card--button>.description {
+    display: none;
+}
+
+.description-content{
+    padding: 36px;
+}
+
+@media only screen and (min-width:720px){
+    .card--button {
+        width: 25%;
+    }
+}
+
+/*
+* Card - Promo Card
+************************************************************************************************
+*/
+.card--promo {
+    width: 100%;
+  }
+
+.card_promo-card_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_promo-card_header img {
+    width: 100%
+}
+
+.card_promo-card_header>div:nth-child(1) img {
+    width: auto;
+    height: auto;
+    max-width: 140px;
+    max-height: 55px;
+}
+
+.card_promo-card_header>div:nth-child(2) {
+    text-align: right;
+}
+
+.card_promo-card_header>div:nth-child(2) img {
+    max-width: 18px;
+    height: auto;
+    cursor: pointer;
+}
+
+.chevy.open {
+    transform: rotateX(180deg);
+}
+
+.card_promo-card_content {
+    width: 100%;
+    height: 24px;
+    display: flex;
+    overflow: hidden;
+    transition: transform 400ms, height 400ms;
+}
+
+.card_promo-card_content>div {
+    width: 100%;
+    margin-right: 24px;
+}
+
+.card_promo-card_content>div:nth-child(2) {
+    display: none;
+    margin-left: 24px;
+}
+
+.card_promo-card_content.expand {
+    height: auto;
+}
+
+.card_promo-card_content.visibleTC {
+    width: 200%;
+    transform: translateX(-50%);
+}
+
+.card_promo-card_content.visibleTC>div:nth-child(2) {
+display: block;
+}
+
+.card_promo-card_content>div>p {
+    color: grey;
+    margin: 0 0 12px 0;
+    font-weight: 300;
+    text-align: right;
+    font-size: 10px;
+}
+
+.card_promo-card_content span.tc,
+.card_promo-card_content span.back {
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 6px;
+}
+
+.card_promo-card_content>div:nth-child(2)>div {
+    font-size: 10px;
+}
+
+.card_promo-card_content>div:nth-child(2)>div ol,
+.card_promo-card_content>div:nth-child(2)>div ul {
+    padding-left: 0 !important;
+}
+
+.tagV {
+    background: url(https://scotiabankfiles.azureedge.net/scotia-bank-mexico/bf_2020_v.png) no-repeat 90% 12px;
+    background-size: 32px;
+}
+
+.tagMC {
+    background: url(https://scotiabankfiles.azureedge.net/scotia-bank-mexico/bf_2020_mc.png) no-repeat 90% 12px;
+    background-size: 72px;
+}
+
+.tag15 {
+    background: url(https://scotiabankfiles.azureedge.net/scotia-bank-mexico/bfi_2020_bon.png) no-repeat 90% 12px;
+    background-size: 62px;
+}
+
+
+  @media only screen and (min-width:720px){
+    .card--promo {
+        width: 40%;
+    }
+}

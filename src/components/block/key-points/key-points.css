@@ -1,0 +1,54 @@
+.key-points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.key-points>div {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    padding: 18px 5%;
+    font-weight: 600;
+    font-size: 18px;
+    color: #2b2b2b;
+    line-height: 1.4;
+}
+
+.key-points img {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 24px;
+}
+
+.key-points.key-points--text > div{
+    font-weight: 400;
+    color:#000;
+}
+
+@media only screen and (min-width:720px){
+    
+    .key-points>div {
+        width: 25%;
+        border-bottom: none;
+        border: none;
+        padding: 0;
+        margin-bottom: 48px;
+    }
+
+    .key-points>div>div:nth-child(2) {
+        padding: 0 38px;
+    }
+
+    .key-points.key-points--text > div{
+        width: 40%;
+    }
+
+    .key-points.key-points--text > div:nth-last-child(even) > div{
+        border-right: 1px solid #D6D6D6;
+    }
+
+    .key-points.key-points--text>div:nth-last-child(-n+2){
+        margin-bottom: 0;
+    }
+}

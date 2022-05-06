@@ -1,0 +1,92 @@
+.stickyband{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color:#212121;
+    color:#FFF;
+    font-size:16px;
+    box-sizing: border-box;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.stickyband > div{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display:flex;
+    margin:12px auto 14px auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.stickyband > div > div{
+    width: 100%;
+}
+
+.stickyband > div > div:nth-child(2){
+    text-align: center;
+}
+
+
+.stickyband img{
+        width: 36px;
+        vertical-align: middle;
+        margin-right: 8px;
+}
+
+
+
+#main-body  div.stickyband > div > div:nth-child(1) > div{
+    display: inline-block;
+    vertical-align: middle;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+
+.sb_action{
+    border-bottom: 1px dotted;
+    font-weight: 600;
+    color:#FFF;
+    text-decoration: none !important;
+    line-height: 2;
+}
+
+.sb_action:hover{
+    border:none;
+}
+
+.sb_action.link--important{
+    color:#FFF;
+}
+
+.infoTextDesktop{
+    display: none;
+}
+
+
+
+.infoTextDesktop > div, .infoTextMobile > div{
+    margin-bottom: 4px;
+    font-size: 16px;;
+}
+
+
+@media only screen and (min-width:720px){
+    .infoTextMobile{
+        display: none;
+    }
+    .infoTextDesktop{
+        display: block;
+    }
+
+
+    .stickyband > div > div{
+        width: auto;
+    }
+    
+}

@@ -1,0 +1,49 @@
+.combo {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.combo>div {
+    box-sizing: border-box;
+    padding: 0 0 24px 0;
+    overflow: hidden;
+}
+.combo>div .illustration{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (min-width:720px){
+
+    .combo {
+        width: 100%;
+    }
+
+    .combo>div:nth-child(1) {
+        width: 55%;
+        padding: 0 18px 0 0;
+    }
+
+    .combo>div:nth-child(2) {
+        width: 45%;
+        padding: 0 0 0 18px;
+    }
+
+    .combo.combo--inverse>div:nth-child(1) {
+        order: 2;
+        padding: 0 0 0 18px;
+    }
+
+    .combo.combo--inverse>div:nth-child(2) {
+        order: 1;
+        padding: 0 18px 0 0;
+    }
+
+    .combo.combo--equal > div{
+        width: 50% !important;
+    }
+}

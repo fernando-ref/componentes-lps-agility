@@ -1,0 +1,33 @@
+.pill{
+	background-color: #fff;
+    color: #333;
+    border: 1px solid transparent;
+    font-weight: 800;
+	cursor: pointer;
+	border-radius: 999px;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 18px 30px;
+	box-sizing: border-box;
+	text-decoration: none;
+	display: inline-block;
+	-webkit-transition: .33s ease;
+    transition: .33s ease;
+}
+
+.pill.dark{
+	background-color: #333;
+    color: #FFF;
+}
+
+.pill:hover{
+	background-color: transparent;
+    color: #FFF;
+	border-color: #FFF;
+}
+
+.pill.dark:hover{
+	border-color: #333;
+	background-color: transparent;
+    color: #333;
+}

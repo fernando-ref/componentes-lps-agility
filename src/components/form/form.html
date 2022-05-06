@@ -1,0 +1,82 @@
+<div class="formReg">
+        <div>
+            <div class="grey" id="record">
+                <h2>&iexcl;Reg&iacute;strate!</h2>
+            </div>
+            <div id="formSection">
+                <div class="textBoxContainer"><label class="" for="nombre">Nombre(s) <span>(Como aparece en tu
+                            identificaci&oacute;n)</span></label><input type="text" id="nombre" class="inputFont"
+                        required="" placeholder="" maxlength="40" value="" /><span class="bar"></span>
+                    <div class="error"><i class="dfmxs dfmxs-canvas-error"></i>Falta tu nombre(s)</div>
+                </div>
+                <div class="textBoxContainer"><label class="" for="apellido_paterno">Apellido Paterno <span>(Como
+                            aparece en tu identificaci&oacute;n)</span></label><input type="text"
+                        id="apellido_paterno" class="inputFont" required="" placeholder="" maxlength="40"
+                        value="" /><span class="bar"></span>
+                    <div class="error"><i class="dfmxs dfmxs-canvas-error"></i>Faltan tu Apellido Paterno</div>
+                </div>
+                <div class="textBoxContainer"><label class="" for="apellido_materno">Apellido Materno <span>(Como
+                            aparece en tu identificaci&oacute;n)</span> </label><input type="text"
+                        id="apellido_materno" class="inputFont" required="" placeholder="" maxlength="40"
+                        value="" /><span class="bar"></span>
+                    <div class="error"><i class="dfmxs dfmxs-canvas-error"></i>Falta tu Apellido Materno</div>
+                </div>
+                <div class="textBoxContainer"><label class="" for="rfc">RFC <span>(Preferible con
+                            Homoclave)</span></label><input type="text" id="rfc" class="inputFont" required=""
+                        placeholder="" maxlength="15" value="" /><span class="bar"></span>
+                    <div class="error"><i class="dfmxs dfmxs-canvas-error"></i>Falta tu RFC electr&oacute;nico</div>
+                </div>
+                <div class="selectBoxContainer"><label for="tipo_tarjeta">Tipo de Tarjeta</label><select
+                        id="tipo_tarjeta" class="inputFont">
+                        <option selected="selected" disabled="disabled" value="">Selecciona tu Tarjeta de
+                            Cr&eacute;dito</option>
+                        <option value="travel_clasica">Scotia Travel Cl&aacute;sica</option>
+                        <option value="travel_oro">Scotia Travel Oro</option>
+                        <option value="travel_platinum">Scotia Travel Platinum</option>
+                        <option value="travel_world_elite">Scotia Travel World Elite</option>
+                        <option value="viva">Viva</option>
+                        <option value="ideal">IDEAL Scotiabank</option>
+                        <option value="advantage_platinum">Scotiabank / AAdvantage&reg; Platinum</option>
+                        <option value="advantage_world_elite">Scotiabank / AAdvantage&reg; World Elite</option>
+                        <option value="tasa_baja_clasica">Tasa Baja Cl&aacute;sica</option>
+                        <option value="tasa_baja_oro">Tasa Baja Oro</option>
+                    </select>
+                    <div class="error"><i class="dfmxs dfmxs-canvas-error"></i>Falta tu Tipo de Tarjeta</div>
+                </div>
+                <div><label class="filled" for="marca_tarjeta"></label>
+                    <div id="marca_tarjeta" class="radioButtonContainer"><label class="radioButtonItem"><img
+                                src="https://scotiabankfiles.azureedge.net/scotia-bank-mexico/bf_2020_v.png"
+                                alt="visa" caption="false" /><input type="radio" id="visa" name="marca_tarjeta"
+                                value="visa" /><span class="radioButton"></span></label><label
+                            class="radioButtonItem"><img
+                                src="https://scotiabankfiles.azureedge.net/scotia-bank-mexico/bf_2020_mc.png"
+                                alt="mastercard" caption="false" /><input type="radio" id="mastercard"
+                                name="marca_tarjeta" value="mastercard" /><span class="radioButton"></span> </label>
+                        <div class="error"><i class="dfmxs dfmxs-canvas-error"></i>Indica el Tipo de Tarjeta</div>
+                    </div>
+                </div>
+                <div class="textBoxContainer"><label class="filled" for="4digitos">&Uacute;ltimos 4 d&iacute;gitos
+                        de tu Tarjeta </label><input type="text" id="_4digitos" class="inputFont" required=""
+                        placeholder="" maxlength="4" value="" /><span class="bar"></span>
+                    <div class="error"><i class="dfmxs dfmxs-canvas-error"></i>Faltan los &uacute;ltimos 6
+                        d&iacute;gitos de tu Tarjeta</div>
+                </div>
+                <label class="checkBoxContainer"><span>Al enviar mis datos estoy aceptando conocer el <a
+                            target="_blank" rel="noopener noreferrer"
+                            href="https://www.scotiabank.com.mx/es-mx/acerca-de-scotiabank/aviso-de-privacidad.aspx">Aviso
+                            de privacidad</a> de Scotiabank Inverlat S.A. y los T&eacute;rminos y
+                        condiciones</span><input type="checkbox" id="privacidad" name="privacidad" required="" />
+                    <span class="checkmark"></span>
+                    <div class="error"><i class="dfmxs dfmxs-canvas-error"></i>Acepta los T&eacute;rminos y
+                        condiciones</div>
+                </label> <small style="font-size: 12px;">Te recordamos que tus datos personales son utilizados
+                    conforme a las finalidades de nuestro Aviso de Privacidad Integral, el cual puedes consultar <a
+                        href="https://www.scotiabank.com.mx/es-mx/personas/default.aspx" target="_blank"
+                        rel="noopener"> scotiabank.com.mx</a></small>
+                <div id="html_element"></div>
+                <div><button type="button" class="primary" id="sendForm">Enviar</button></div>
+            </div>
+            <div id="formSectionResult"></div>
+        </div>
+        <div></div>
+    </div>

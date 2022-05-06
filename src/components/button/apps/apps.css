@@ -1,0 +1,26 @@
+.apps {
+    margin: 48px auto 0 auto;
+    text-align: center;
+}
+
+.apps a {
+    text-decoration: none !important;
+    transition: ease .25s;
+}
+
+.apps img {
+    width: 45%;
+    max-width: 165px;
+}
+
+.apps>a:nth-child(1){
+    margin-right: 2%;
+}
+
+.apps>a:nth-child(2){
+    margin-left: 2%;
+}
+
+.apps a:hover img{
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 11%);
+}

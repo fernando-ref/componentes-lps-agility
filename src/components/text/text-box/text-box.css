@@ -1,0 +1,24 @@
+.text-box{
+    width: 100%;
+    font-size: 18px;
+}
+
+@media only screen and (min-width:720px){
+    .text-box {
+        width: 60%;
+        margin:0 auto;
+        font-size: 16px;
+    }
+    .text-box.right{
+        text-align: right;
+    }
+    .text-box.left{
+        text-align: left;
+    }
+    .text-box.center{
+        text-align: center;
+    }
+    .text-box.justify{
+        text-align: justify;
+    }
+}

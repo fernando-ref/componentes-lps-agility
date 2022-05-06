@@ -1,0 +1,44 @@
+ul.tabs-h {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    padding: 0;
+    list-style-type: none;
+    font-size: 16px;
+}
+
+ul.tabs-h>li {
+    color: #333;
+    text-align: center;
+    width: 50%;
+    padding: 8px 0;
+    box-sizing: border-box;
+    border-bottom: solid 1px #e2e8ee;
+}
+
+ul.tabs-h>li:hover {
+    cursor: pointer;
+    border-bottom: solid 2px #4D4D4D;
+}
+
+ul.tabs-h>li.active {
+    border-bottom: solid 2px #ed0722;
+    font-weight: bold;
+}
+
+ul.tabs-h>li span {
+    cursor: pointer;
+}
+
+.tabsContent {
+    overflow: visible;
+    padding: 0 1%;
+}
+
+@media only screen and (min-width:720px){
+    ul.tabs-h>li {
+        width: auto;
+        padding: 8px 32px;
+    }
+}

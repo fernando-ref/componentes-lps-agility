@@ -1,0 +1,31 @@
+.secondary{
+	background-color: #FFF;
+    color: #333;
+    border: 1px solid #333;
+	cursor: pointer;
+	border-radius: 5px;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 18px 30px;
+	box-sizing: border-box;
+	text-decoration: none;
+	display: inline-block;
+	-webkit-transition: .33s ease;
+    transition: .33s ease;
+}
+
+.secondary:hover{
+	border-color: #ec111a;
+	color: #ec111a;
+
+}
+
+.secondary.redColor{
+    color: #ec111a;
+    border: 1px solid #ec111a;
+}
+
+.secondary.redColor:hover{
+	border-color: #333;
+	color: #333;
+}

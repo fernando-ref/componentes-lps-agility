@@ -1,0 +1,35 @@
+
+.video-container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+
+.video-container::after {
+	content: '';
+	display: block;
+	padding-top: 56.25%;
+}
+
+.video-container.popup{
+	top: 50%;
+    transform: translateY(-60%);
+}
+
+.video-container iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+@media only screen and (min-width:720px){
+    .video-container {
+        width: 65% !important;
+        margin: 0 auto;
+    }
+	.video-container.popup {
+        width: 55% !important;
+    }
+}

@@ -1,0 +1,57 @@
+
+.legal {
+    width: 100%;
+    margin: 0 auto 0 auto;
+    padding-bottom: 8.40px;
+    font-size: 12px;
+    color: #333;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.legal-point {
+    display: flex;
+    text-align: justify;
+}
+
+.legal-point>div:nth-child(1) {
+    font-weight: bold;
+    width: 8%;
+}
+
+.legal-point>div:nth-child(2) {
+    width: 92%;
+}
+
+.legal-point.legal-point--global > div:first-child{
+    display: none;
+}
+
+.legal-point.legal-point--global > div:last-child{
+    width: 100%;
+}
+
+
+.legal-point span.highlight {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media only screen and (min-width:720px){
+    
+    .title{
+        font-size:36px;
+    }
+    
+    .legal-point>div:nth-child(1) {
+        width: 2%;
+    }
+    
+    .legal-point>div:nth-child(2) {
+        width: 98%;
+    }
+
+    .legal-point.legal-point--global > div:nth-child(2) {
+        width:100%
+    }
+}
