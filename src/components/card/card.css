@@ -482,14 +482,15 @@
 */
 .card--colored {
     position: relative;
-    width: 50%;
+    width: 47%;
     padding: 0;
     background-color: #FFF;
 }
 
 .card--colored>a {
     text-decoration: none;
-    color: #FFF;
+    display: block;
+    height: 100%;
 }
 
 .card--colored>a>div:nth-child(1) {
@@ -512,6 +513,7 @@
     font-weight: 600;
     margin: 0;
     width: 80%;
+    color: #FFF;
 }
 
 .card--colored--ftr.whiteColor {
