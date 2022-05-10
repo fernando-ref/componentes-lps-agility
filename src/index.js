@@ -217,15 +217,13 @@ ${stickerBanner.stickerBanner()}
 <script type="text/plain" class="language-markup">
 <!-- redColor, blue, purple, pink, yellow, orange, green, yellow, grey -->
 <div class="sticker-banner blue">
-    <a href="#">
-        <div>
-            <img src="--Here your URL image background--" alt="">
-        </div>
-        <div>
-            <!-- Title here -->
+    <div></div>
+    <div>
+        Las respuestas sobre nuestros productos y servicios en nuestro Centro de Ayuda
+        <a href="#">
             <div class="sticker-banner--ftr whiteColor"></div>
-        </div>
-    </a>
+        </a>
+    </div>
 </div>
 </script>
 

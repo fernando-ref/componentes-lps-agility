@@ -485,6 +485,7 @@
     width: 47%;
     padding: 0;
     background-color: #FFF;
+    border:none;
 }
 
 .card--colored>a {
@@ -501,7 +502,7 @@
 }
 
 .card--colored>a>div:nth-child(2) {
-    padding: 24px;
+    padding: 24px 16px;
     background-color: #FFF;
     display: flex;
     align-items: center;
@@ -509,7 +510,7 @@
 }
 
 .card--colored>a>div:nth-child(2) h3 {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     margin: 0;
     width: 80%;
