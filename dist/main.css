@@ -328,7 +328,7 @@
 @media only screen and (min-width:720px) {
 
     .boom-banner{
-        margin:64px 0;
+        margin:48px 0;
     }
 
     .boom-banner > div:nth-child(1){
@@ -351,13 +351,15 @@
 
     .boom-banner> div:nth-child(2) {
         position: absolute;
-        width: 40%;
-        height: 112%;
+        width: 32%;
+        height: 120%;
         top: 50%;
         background-color: #fff;
         border-radius: 4px;
         left: 50%;
         transform: translateY(-50%);
+        background: no-repeat no-repeat center center;
+        background-size: cover;
     }
 }
 .videoBanner {
