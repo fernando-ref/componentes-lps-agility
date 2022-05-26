@@ -3,6 +3,8 @@ import minimalHeader from './components/header/minimal/minimal';
 import container from './components/container/container';
 
 import heroBanner from './components/banner/hero/hero-banner';
+import boomBanner from './components/banner/boom/boom-banner';
+
 import videoBanner from './components/banner/video/video-banner';
 import carrousel from './components/banner/carrousel/carrousel';
 import bandBanner from './components/banner/band/band-banner';
@@ -106,6 +108,26 @@ ${heroBanner.heroBanner()}
             <!-- Description and/or extra content here -->
             </div>
         </div>
+    </div>
+</div>
+</script>
+
+<div class="container"><div>
+<h3 class="component">Boom Banner</h3>
+</div></div>
+${boomBanner.boomBanner()}
+<script type="text/plain" class="language-markup">
+<!-- redColor, blue, purple, pink, yellow, orange, green, yellow, grey -->
+<div class="boom-banner purple">
+    <div>
+        <div>
+            <div>
+                <h1>M&aacute;s cajeros<br> a tu alcance</h1> En m&aacute;s de 7,000 ubicaciones
+            </div>
+        </div>
+    </div>
+    <div
+        style="background-image:url('--Here your URL image background--')">
     </div>
 </div>
 </script>

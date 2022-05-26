@@ -254,6 +254,112 @@
         box-sizing: border-box;
     }
 }
+.boom-banner{
+    position: relative;
+}
+.boom-banner > div:nth-child(1){
+    background-color: #FFF;
+    background-repeat: no-repeat;
+    background-position: -1000%;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #000;
+    word-break: break-word;
+}
+.boom-banner.redColor > div:nth-child(1){
+    background-color: #EC111A;
+    color:#FFF;
+}
+.boom-banner.orange > div:nth-child(1){
+    background-color: #FB6330;
+    color:#FFF;
+}
+.boom-banner.green > div:nth-child(1){
+    background-color: #138468;
+    color:#FFF;
+}
+.boom-banner.blue > div:nth-child(1){
+    background-color: #009DD6;
+    color:#FFF;
+}
+.boom-banner.purple > div:nth-child(1){
+    background-color: #7849B8;
+    color:#FFF;
+}
+.boom-banner.pink > div:nth-child(1){
+    background-color: #F2609E;
+    color:#FFF;
+}
+.boom-banner.yellow > div:nth-child(1){
+    background-color: #FFD42F;
+    color:#FFF;
+}
+.boom-banner.grey > div:nth-child(1){
+    background-color: #333333;
+    color:#FFF;
+}
+
+.boom-banner > div:nth-child(1) >div {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.boom-banner> div:nth-child(1) >div > div >h1 {
+    display: block;
+    margin: 0 0 10px 0;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: #FFF;
+}
+
+.boom-banner> div:nth-child(1) >div>div {
+    width: 100%;
+}
+
+.boom-banner> div:nth-child(1) >div>div:nth-child(1) {
+    padding: 32px;
+    padding-bottom: 72px;
+}
+
+@media only screen and (min-width:720px) {
+
+    .boom-banner{
+        margin:64px 0;
+    }
+
+    .boom-banner > div:nth-child(1){
+        background-size: contain;
+        background-position: calc(50vw) center;
+    }
+
+    .boom-banner> div:nth-child(1) >div>div:nth-child(1) {
+        width: 45%;
+        padding: 104px 0;
+    }
+
+    .boom-banner> div:nth-child(1) >div > div >h1 {
+        font-size: 46px;
+    }
+
+    .boom-banner> div:nth-child(1) >div > div >h1 > sup{
+        font-size: 24px;
+    }
+
+    .boom-banner> div:nth-child(2) {
+        position: absolute;
+        width: 40%;
+        height: 112%;
+        top: 50%;
+        background-color: #fff;
+        border-radius: 4px;
+        left: 50%;
+        transform: translateY(-50%);
+    }
+}
 .videoBanner {
     position: relative;
     margin-top: 70px;
